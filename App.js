@@ -11,7 +11,9 @@ const App = () => {
     return (
         <NavigationContainer>
             <AppStack.Navigator
-                headerMode="none"
+                screenOptions={{
+                    headerShown: false
+                }}
             >
                 <AppStack.Screen name="Onboarding" component={OnboardingScreen}/>
                 <AppStack.Screen name="Login" component={LoginScreen}/>
