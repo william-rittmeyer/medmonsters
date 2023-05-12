@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#ffffff',
-    fontFamily: 'Lato-Regular',
+    color: '#ffffff'
   },
 });

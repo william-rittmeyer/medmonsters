@@ -9,6 +9,7 @@ const SignupScreen = ({navigation}) => {
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
 
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Create an account</Text>
@@ -33,7 +34,7 @@ const SignupScreen = ({navigation}) => {
 
       <FormInput
         labelValue={confirmPassword}
-        onChangeText={(userPassword) => setConfirmPassword(userPassword)}
+        onChangeText={(userPassword) => setPassword(userPassword)}
         placeholderText="Confirm Password"
         iconType="lock"
         secureTextEntry={true}
@@ -109,8 +110,7 @@ const styles = StyleSheet.create({
   navButtonText: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#2e64e5',
-
+    color: '#2e64e5'
   },
   textPrivate: {
     flexDirection: 'row',
